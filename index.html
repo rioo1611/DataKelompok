@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Data & Profil Kelompok | Tugas Bu Stevphania</title>
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Utama -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="header">
+    <nav class="navbar" id="navbar" aria-label="Navigasi Utama">
+      <div class="nav-container">
+        <!-- Logo Kelompok -->
+        <a href="#home" class="nav-logo">
+          <div class="logo-icon"><i class="fa-solid fa-users"></i></div>
+          <span>Kelompok<span>Kita</span></span>
+        </a>
+        
+        <!-- Menu Navigasi Utama -->
+        <div class="nav-menu-wrapper" id="nav-menu-wrapper">
+          <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link"><i class="fa-solid fa-circle-info"></i> Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a href="#members" class="nav-link"><i class="fa-solid fa-user-group"></i> Data Anggota</a>
+            </li>
+            <li class="nav-item">
+              <a href="#schedule" class="nav-link"><i class="fa-solid fa-calendar-check"></i> Pembagian Tugas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link"><i class="fa-solid fa-folder-open"></i> Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Kontak</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tombol Aksi Kanan (Theme Toggle & Mobile Menu) -->
+        <div class="nav-actions">
+          <!-- Dark / Light Mode Toggle -->
+          <button class="theme-toggle" id="theme-toggle" aria-label="Ubah tema mode gelap atau terang" title="Ganti Mode Tampilan">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+          </button>
+
+          <!-- Hamburger Button (Mobile Screen) -->
+          <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu navigasi" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <i class="fa-solid fa-award"></i> Tugas Pemrograman Web • Bu Stevphania
+      </div>
+      <h1 class="hero-title">
+        Portal Informasi &amp; Profil <span class="gradient-text">Kelompok Kami</span>
+      </h1>
+      <p class="hero-description">
+        Selamat datang di website resmi data kelompok kami. Halaman ini memuat profil lengkap 5 anggota tim, 
+        struktur peran, distribusi tanggung jawab tugas, serta dokumentasi proyek pembelajaran bersama.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#members" class="btn btn-primary">
+          <i class="fa-solid fa-users-viewfinder"></i> Lihat Data Anggota
+        </a>
+        <a href="#schedule" class="btn btn-secondary">
+          <i class="fa-solid fa-clipboard-list"></i> Pembagian Kerja
+        </a>
+      </div>
+
+      <!-- Statistik Ringkas Kelompok -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Anggota Tim</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Komitmen Kerja</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Modul Selesai</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">A+</span>
+          <span class="stat-label">Target Nilai</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Profil Kelompok</span>
+        <h2 class="section-title">Tentang Kelompok Kami</h2>
+        <p class="section-subtitle">
+          Mengenal latar belakang kelompok, pembimbing, serta komitmen kolaborasi kami dalam menyelesaikan tugas akademik.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Card 1: Identitas Tugas -->
+        <div class="about-card">
+          <div class="card-icon-box icon-primary">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3>Identitas Penugasan</h3>
+          <p class="card-text">
+            Proyek website ini dibuat untuk memenuhi tugas kelompok 
+            <strong>Pemrograman Web</strong> yang dibimbing langsung oleh <strong>Ibu Stevphania Pane, S.Kom</strong>.
+          </p>
+          <ul class="about-list">
+            <li><i class="fa-solid fa-check"></i> Mata Pelajaran: KKA</li>
+            <li><i class="fa-solid fa-check"></i> Guru / Pengampu: Ibu Stevphania Pane, S.Kom</li>
+            <li><i class="fa-solid fa-check"></i> Semester: Ganjil 2026</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Visi & Misi Tim -->
+        <div class="about-card">
+          <div class="card-icon-box icon-success">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3>Visi &amp; Misi Tim</h3>
+          <p class="card-text">
+            Menghasilkan website yang fungsional, bersih, responsif, dan mudah dinavigasi, 
+            sembari mengasah keterampilan logika dan estetika koding bersama.
+          </p>
+          <ul class="about-list">
+            <li><i class="fa-solid fa-check"></i> Komunikasi aktif dan saling membantu</li>
+            <li><i class="fa-solid fa-check"></i> Disiplin terhadap tenggat waktu</li>
+            <li><i class="fa-solid fa-check"></i> Penulisan kode yang rapi &amp; bersih</li>
+          </ul>
+        </div>
+
+        <!-- Card 3: Pola Kolaborasi -->
+        <div class="about-card">
+          <div class="card-icon-box icon-accent">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <h3>Pola Kerja Kolaboratif</h3>
+          <p class="card-text">
+            Pekerjaan dibagi secara terstruktur sesuai minat dan keahlian spesifik tiap anggota, mulai dari 
+            manajemen proyek, desain UI/UX, coding frontend, hingga pengujian.
+          </p>
+          <ul class="about-list">
+            <li><i class="fa-solid fa-check"></i> Diskusi rutin progres berkala</li>
+            <li><i class="fa-solid fa-check"></i> Koordinasi kode yang terintegrasi</li>
+            <li><i class="fa-solid fa-check"></i> Saling review kualitas tampilan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MEMBERS SECTION ================= -->
+  <section id="members" class="section members-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-id-card"></i> Personil Tim</span>
+        <h2 class="section-title">Data Anggota Kelompok</h2>
+        <p class="section-subtitle">
+          Berikut adalah 5 anggota kelompok kami. Klik tombol <strong>"Detail Profil"</strong> untuk melihat biodata lengkap, keahlian, dan kontak masing-masing.
+        </p>
+      </div>
+
+      <!-- Filter Kategori Anggota -->
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">Semua (5)</button>
+        <button class="filter-btn" data-filter="lead">Ketua</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX &amp; Desain</button>
+        <button class="filter-btn" data-filter="qa">QA &amp; Dokumentasi</button>
+      </div>
+
+      <!-- Grid Kartu Anggota (5 Anggota) -->
+      <div class="members-grid" id="members-grid">
+
+        <!-- ANGGOTA 1: Deva Pratista Aprilia (Ketua Kelompok) -->
+        <article class="member-card" data-category="lead" data-id="1">
+          <div class="member-badge">Ketua Kelompok</div>
+          <div class="member-img-wrapper">
+            <img src="img/deva.jpeg" 
+                 alt="Foto Deva Pratista Aprilia" class="member-img" loading="lazy">
+            <div class="member-overlay-socials">
+              <a href="https://www.instagram.com/rzyx.000?stkn=b25wd2hqYnFwY3U=" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <span class="member-role"><i class="fa-solid fa-crown"></i> Ketua Kelompok &amp; PIC</span>
+            <h3 class="member-name">Deva Pratista Aprilia</h3>
+            <p class="member-id"><i class="fa-solid fa-id-badge"></i> No: 7</p>
+            <p class="member-bio">
+              Memimpin koordinasi tim, mengelola jadwal pengerjaan tugas, membagi peran anggota, dan memastikan kualitas akhir proyek.
+            </p>
+            <div class="member-skills">
+              <span class="skill-tag">Project Management</span>
+              <span class="skill-tag">Leadership</span>
+              <span class="skill-tag">HTML &amp; CSS</span>
+            </div>
+            <button class="btn btn-detail" 
+                    data-id="1"
+                    data-name="Deva Pratista Aprilia"
+                    data-role="Ketua Kelompok &amp; Project Coordinator"
+                    data-nim="01 / Pemrograman Web"
+                    data-email="devapratistaaprillia@gmail.com"
+                    data-phone="+62 852-1266-7896"
+                    data-bio="Mengoordinasikan seluruh tahapan pengerjaan tugas, pembagian peran, perancangan timeline, dan memastikan setiap modul terselesaikan tepat waktu dan berkualitas."
+                    data-skills="Team Leadership, Project Scheduling, HTML5, CSS3, Public Speaking, Problem Solving"
+                    data-quote="Kerja sama dan komunikasi yang solid adalah kunci keberhasilan tim."
+                    data-img="img/deva.jpeg">
+              <i class="fa-solid fa-eye"></i> Detail Profil
+            </button>
+          </div>
+        </article>
+
+        <!-- ANGGOTA 2: Aisah Rahma Kinanthi (Frontend Developer) -->
+        <article class="member-card" data-category="frontend" data-id="2">
+          <div class="member-badge">Frontend Dev</div>
+          <div class="member-img-wrapper">
+            <img src="img/aisah.jpeg" 
+                 alt="Foto Aisah Rahma Kinanthi" class="member-img" loading="lazy">
+            <div class="member-overlay-socials">
+              <a href="https://www.instagram.com/archive_sasyaaaa?stkn=MWJzdTRpcXU1ajNsNQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <span class="member-role"><i class="fa-solid fa-code"></i> Frontend Developer</span>
+            <h3 class="member-name">Aisah Rahma Kinanthi</h3>
+            <p class="member-id"><i class="fa-solid fa-id-badge"></i> No: 02</p>
+            <p class="member-bio">
+              Menyusun struktur bagian website semantik dan styling CSS modern dengan layout responsif.
+            </p>
+            <div class="member-skills">
+              <span class="skill-tag">HTML5 Semantic</span>
+              <span class="skill-tag">CSS Grid / Flexbox</span>
+              <span class="skill-tag">Styling</span>
+            </div>
+            <button class="btn btn-detail" 
+                    data-id="2"
+                    data-name="Aisah Rahma Kinanthi"
+                    data-role="Frontend Developer"
+                    data-nim="02 / Pemrograman Web"
+                    data-email="aisah.rahma@student.sch.id"
+                    data-phone="+62 812‑1333‑9352"
+                    data-bio="Fokus pada pembuatan kode frontend yang bersih, penataan elemen semantik, animasi CSS yang elegan, serta penyesuaian tampilan agar enak dipandang di semua ukuran layar."
+                    data-skills="HTML5, CSS3, Responsive Design, CSS Flexbox &amp; Grid, CSS Variables, Clean Code"
+                    data-quote="Desain yang indah berawal dari struktur kode yang rapi dan terencana."
+                    data-img="img/aisah.jpeg">
+              <i class="fa-solid fa-eye"></i> Detail Profil
+            </button>
+          </div>
+        </article>
+
+        <!-- ANGGOTA 3: Nayla Putri Zahirah (UI/UX Designer) -->
+        <article class="member-card" data-category="uiux" data-id="3">
+          <div class="member-badge">UI/UX Designer</div>
+          <div class="member-img-wrapper">
+            <img src="img/nayla.jpeg" 
+                 alt="Foto Nayla Putri Zahirah" class="member-img" loading="lazy">
+            <div class="member-overlay-socials">
+
+              <a href="https://www.instagram.com/happiestunayyy?stkn=MXV6ODIxbm83c21maA==https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <span class="member-role"><i class="fa-solid fa-pen-nib"></i> UI/UX Designer</span>
+            <h3 class="member-name">Nayla Putri Zahirah</h3>
+            <p class="member-id"><i class="fa-solid fa-id-badge"></i> No: 21</p>
+            <p class="member-bio">
+              Merancang mockup antarmuka visual, pemilihan harmoni warna, tipografi, dan pengalaman pengguna di Figma.
+            </p>
+            <div class="member-skills">
+              <span class="skill-tag">Figma Design</span>
+              <span class="skill-tag">Wireframing</span>
+              <span class="skill-tag">Color Theory</span>
+            </div>
+            <button class="btn btn-detail" 
+                    data-id="3"
+                    data-name="Nayla Putri Zahirah"
+                    data-role="UI/UX &amp; Visual Designer"
+                    data-nim="03 / Pemrograman Web"
+                    data-email="naylaputrizahirah9@gmail.com"
+                    data-phone="+62 895-1906-2042"
+                    data-bio="Memiliki ketertarikan tinggi pada estetika visual, user experience, perancangan prototipe interaktif, dan pemilihan skema warna modern yang ramah pengguna."
+                    data-skills="Figma, UI Prototyping, Wireframing, Visual Hierarchy, Design Systems, User Research"
+                    data-quote="Desain yang baik membuat hal rumit terasa sederhana dan menyenangkan."
+                    data-img="img/nayla.jpeg">
+              <i class="fa-solid fa-eye"></i> Detail Profil
+            </button>
+          </div>
+        </article>
+
+        <!-- ANGGOTA 4: Siti Nuranisa (QA & Dokumentasi) -->
+        <article class="member-card" data-category="qa" data-id="4">
+          <div class="member-badge">Dokumentasi &amp; QA</div>
+          <div class="member-img-wrapper">
+            <img src="img/nisa.jpeg" 
+                 alt="Foto Siti Nuranisa" class="member-img" loading="lazy">
+            <div class="member-overlay-socials">
+              <a href="https://www.instagram.com/sayooue?stkn=MWdoczg2YWJvZ2t1dw==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <span class="member-role"><i class="fa-solid fa-file-circle-check"></i> QA &amp; Dokumentasi</span>
+            <h3 class="member-name">Siti Nuranisa</h3>
+            <p class="member-id"><i class="fa-solid fa-id-badge"></i> NIM / No: 26</p>
+            <p class="member-bio">
+              Melakukan uji coba fitur web di berbagai browser, validasi link navigasi, dan penyusunan laporan tertulis tugas.
+            </p>
+            <div class="member-skills">
+              <span class="skill-tag">Technical Writing</span>
+              <span class="skill-tag">Quality Assurance</span>
+              <span class="skill-tag">Dokumentasi</span>
+            </div>
+            <button class="btn btn-detail" 
+                    data-id="4"
+                    data-name="Siti Nuranisa"
+                    data-role="Quality Assurance &amp; Dokumentasi"
+                    data-nim="04 / Pemrograman Web"
+                    data-email="sitinuranisa2901@gmail.com"
+                    data-phone="+62 852-1959-9725"
+                    data-bio="Teliti dalam menguji setiap fungsi tombol, link navigasi, serta merangkum setiap tahapan dan pencapaian tugas kelompok ke dalam dokumen laporan yang rapi untuk Bu Aini."
+                    data-skills="Quality Assurance, Cross-browser Testing, Technical Writing, Reporting, User Testing"
+                    data-quote="Kerapian dokumentasi dan ketelitian pengujian mencerminkan kualitas karya."
+                    data-img="img/nisa.jpeg">
+              <i class="fa-solid fa-eye"></i> Detail Profil
+            </button>
+          </div>
+        </article>
+
+        <!-- ANGGOTA 5: Jabbar Abimanyu Tinarbuka (Frontend & JS Developer) -->
+        <article class="member-card" data-category="frontend" data-id="5">
+          <div class="member-badge">JS Developer</div>
+          <div class="member-img-wrapper">
+            <img src="img/jabar.jpeg" 
+                 alt="Foto Jabbar Abimanyu Tinarbuka" class="member-img" loading="lazy">
+            <div class="member-overlay-socials">
+              <a href="https://www.instagram.com/jb.4bimanyu?stkn=aG5reHRzcWg0em00" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <span class="member-role"><i class="fa-solid fa-laptop-code"></i> Frontend &amp; JS Developer</span>
+            <h3 class="member-name">Jabbar Abimanyu Tinarbuka</h3>
+            <p class="member-id"><i class="fa-solid fa-id-badge"></i> NIM / No: 11</p>
+            <p class="member-bio">
+              Mengembangkan logika interaktif JavaScript seperti mode gelap/terang, dan modal detail.
+            </p>
+            <div class="member-skills">
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">DOM Scripting</span>
+              <span class="skill-tag">Web Interactivity</span>
+            </div>
+            <button class="btn btn-detail" 
+                    data-id="5"
+                    data-name="Jabbar Abimanyu Tinarbuka"
+                    data-role="Frontend &amp; JavaScript Developer"
+                    data-nim="05 / Pemrograman Web"
+                    data-email="abimanyuaboy7020@gmail.com"
+                    data-phone="+62 812-9730-7447"
+                    data-bio="Menyukai eksplorasi JavaScript interaktif, optimasi performa web, manipulasi DOM dinamis, pembuatan animasi UI, serta implementasi fitur modern di browser."
+                    data-skills="JavaScript Vanilla, DOM Manipulation, Event Listeners, LocalStorage, Web APIs, Debugging"
+                    data-quote="Selalu ada solusi kreatif di balik setiap baris logika pemrograman."
+                    data-img="img/jabar.jpeg">
+              <i class="fa-solid fa-eye"></i> Detail Profil
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SCHEDULE & WORK DIVISION SECTION ================= -->
+  <section id="schedule" class="section schedule-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-list-check"></i> Distribusi Peran</span>
+        <h2 class="section-title">Jadwal &amp; Pembagian Tugas Kelompok</h2>
+        <p class="section-subtitle">
+          Rincian pembagian tanggung jawab, penanggung jawab (PIC) 5 anggota, dan status pengerjaan tugas Bu Aini.
+        </p>
+      </div>
+
+      <div class="table-responsive">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama Modul / Aktivitas</th>
+              <th>Penanggung Jawab (PIC)</th>
+              <th>Peran</th>
+              <th>Tenggat Waktu</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <strong>Perencanaan &amp; Web Kelompok</strong>
+                <p class="sub-text">Menentukan struktur data kelompok, timeline kerja, dan alur website</p>
+              </td>
+              <td><strong>Deva Pratista Aprilia</strong></td>
+              <td><span class="role-pill">Ketua Kelompok</span></td>
+              <td>Minggu ke-1</td>
+              <td><span class="status-badge status-completed"><i class="fa-solid fa-check"></i> Selesai</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <strong>Desain Antarmuka (UI/UX Mockup &amp; Wireframe)</strong>
+                <p class="sub-text">Merancang tata letak visual, prototipe warna, dan komponen di Figma</p>
+              </td>
+              <td><strong>Nayla Putri Zahirah</strong></td>
+              <td><span class="role-pill">UI/UX Designer</span></td>
+              <td>Minggu ke-1</td>
+              <td><span class="status-badge status-completed"><i class="fa-solid fa-check"></i> Selesai</span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <strong>Penyusunan Struktur HTML5 &amp; Styling CSS Modern</strong>
+                <p class="sub-text">Implementasi kode semantik, tata letak grid kartu anggota, dan responsivitas</p>
+              </td>
+              <td><strong>Aisah Rahma Kinanthi</strong></td>
+              <td><span class="role-pill">Frontend Developer</span></td>
+              <td>Minggu ke-2</td>
+              <td><span class="status-badge status-completed"><i class="fa-solid fa-check"></i> Selesai</span></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                <strong>Interaktivitas JS, Navbar Terhubung &amp; Mode Gelap</strong>
+                <p class="sub-text">Koding menu hamburger, scrollspy, modal pop-up biodata, dan dark mode</p>
+              </td>
+              <td><strong>Jabbar Abimanyu Tinarbuka</strong></td>
+              <td><span class="role-pill">JS Developer</span></td>
+              <td>Minggu ke-2</td>
+              <td><span class="status-badge status-completed"><i class="fa-solid fa-check"></i> Selesai</span></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>
+                <strong>Pengujian Responsivitas &amp; Dokumentasi Laporan</strong>
+                <p class="sub-text">Uji kelancaran navigasi di berbagai perangkat dan pembuatan laporan Bu Aini</p>
+              </td>
+              <td><strong>Siti Nuranisa</strong></td>
+              <td><span class="role-pill">QA &amp; Dokumentasi</span></td>
+              <td>Minggu ke-3</td>
+              <td><span class="status-badge status-completed"><i class="fa-solid fa-check"></i> Selesai</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-laptop-code"></i> Hasil Karya</span>
+        <h2 class="section-title">Tugas &amp; Proyek Kelompok</h2>
+        <p class="section-subtitle">
+          Portofolio modul tugas yang telah diselesaikan bersama oleh 5 anggota tim.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-badge">Tugas Utama</span>
+            <span class="status-badge status-completed"><i class="fa-solid fa-check"></i> Selesai</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Website Profil &amp; Data Kelompok</h3>
+            <p class="project-desc">
+              Membangun website profil kelompok responsif menggunakan HTML5 semantic, CSS modern (Flexbox &amp; Grid), 
+              serta JavaScript Vanilla untuk navigasi mulus dan modal interaktif.
+            </p>
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="#home" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Sedang Ditampilkan</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-badge">Tugas Lanjutan</span>
+            <span class="status-badge status-completed"><i class="fa-solid fa-check"></i> Selesai</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Navigasi Terhubung &amp; Responsive Navbar</h3>
+            <p class="project-desc">
+              Penerapan navbar sticky dengan link anchor halus, mobile hamburger menu animasi, 
+              serta ScrollSpy yang mendeteksi posisi seksi saat discroll.
+            </p>
+            <div class="project-tags">
+              <span>ScrollSpy</span>
+              <span>Mobile Menu</span>
+              <span>Dark Mode</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="#navbar" class="project-link"><i class="fa-solid fa-compass"></i> Cek Navbar Di Atas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Hubungi Kami</span>
+        <h2 class="section-title">Kirim Masukan atau Saran</h2>
+        <p class="section-subtitle">
+          Punya pertanyaan atau masukan untuk kelompok kami? Silakan hubungi kami melalui formulir atau kontak di bawah ini.
+        </p>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Informasi Kontak Kelompok -->
+        <div class="contact-info-card">
+          <h3>Informasi Kontak Tim</h3>
+          <p>
+            Website ini dikelola secara bersama oleh 5 anggota kelompok kami untuk tugas mata pelajaran Pemrograman Web Bu Stevphania Pane.
+          </p>
+
+          <div class="info-items">
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4>Lokasi Sekolah</h4>
+                <p> SMK YADIKA 2 JAKARTA</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>Email Kelompok</h4>
+                <p> devapratistaaprilli@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-comments"></i></div>
+              <div>
+                <h4>Guru / Pengampu</h4>
+                <p> Stevphania Pane, S.Kom</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulir Kontak Interaktif -->
+        <div class="contact-form-card">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name"><i class="fa-solid fa-user"></i> Nama Lengkap</label>
+                <input type="text" id="name" name="name" placeholder="Misal: Budi Santoso" required>
+              </div>
+              <div class="form-group">
+                <label for="email"><i class="fa-solid fa-at"></i> Alamat Email</label>
+                <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject"><i class="fa-solid fa-tag"></i> Subjek Pesan</label>
+              <input type="text" id="subject" name="subject" placeholder="Misal: Masukan untuk proyek kelompok" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message"><i class="fa-solid fa-message"></i> Isi Pesan / Saran</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tuliskan pesan atau catatan di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="btn-submit">
+              <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Sekarang
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="logo-icon"><i class="fa-solid fa-users"></i></div>
+        <h3>Kelompok<span>Kita</span></h3>
+        <p>Proyek Website Profil &amp; Data Kelompok untuk Tugas Bu Stevphania Pane, S.Kom.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigasi Cepat</h4>
+        <ul>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#members">Data Anggota</a></li>
+          <li><a href="#schedule">Pembagian Tugas</a></li>
+          <li><a href="#projects">Tugas &amp; Proyek</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-meta">
+        <h4>Informasi Penugasan</h4>
+        <p>Mata Pelajaran: <strong>KKA</strong></p>
+        <p>Guru / Pengampu: <strong>Stevphania Pane, S.Kom</strong></p>
+        <p>Tahun Ajaran: <strong>2026</strong></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 <strong>KelompokKita</strong>. Dibuat dengan sepenuh hati untuk memenuhi tugas kelompok.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING BUTTON (BACK TO TOP) ================= -->
+  <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas" title="Kembali ke atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ================= MODAL DETAIL ANGGOTA ================= -->
+  <div class="modal-overlay" id="member-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modal-close" aria-label="Tutup jendela modal">&times;</button>
+      
+      <div class="modal-body">
+        <div class="modal-header-section">
+          <img src="" alt="Foto Profil" class="modal-avatar" id="modal-img">
+          <div class="modal-title-box">
+            <span class="modal-role-badge" id="modal-role">Peran Anggota</span>
+            <h3 class="modal-name" id="modal-name">Nama Anggota</h3>
+            <p class="modal-nim" id="modal-nim">NIM: -</p>
+          </div>
+        </div>
+
+        <div class="modal-details-grid">
+          <div class="modal-detail-item">
+            <span class="detail-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+            <span class="detail-value" id="modal-email">-</span>
+          </div>
+          <div class="modal-detail-item">
+            <span class="detail-label"><i class="fa-solid fa-phone"></i> WhatsApp / Telp:</span>
+            <span class="detail-value" id="modal-phone">-</span>
+          </div>
+        </div>
+
+        <div class="modal-section-block">
+          <h4><i class="fa-solid fa-user-pen"></i> Tentang Saya</h4>
+          <p id="modal-bio" class="modal-bio-text">-</p>
+        </div>
+
+        <div class="modal-section-block">
+          <h4><i class="fa-solid fa-layer-group"></i> Keahlian &amp; Tanggung Jawab</h4>
+          <div class="modal-skills-list" id="modal-skills"></div>
+        </div>
+
+        <div class="modal-quote-box">
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <p id="modal-quote" class="modal-quote-text">Motto hidup...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TOAST NOTIFICATION ================= -->
+  <div class="toast" id="toast" role="alert" aria-live="assertive">
+    <div class="toast-icon" id="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-message" id="toast-message">Pesan Anda berhasil dikirim!</div>
+  </div>
+
+  <!-- JavaScript Utama -->
+  <script src="script.js"></script>
+</body>
+</html>
+</html>
